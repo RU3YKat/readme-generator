@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "command-line, response-based README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ru3ykat",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RU3YKat/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RU3YKat/readme-generator/issues"
+  },
+  "homepage": "https://github.com/RU3YKat/readme-generator#readme"
+}
