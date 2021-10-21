@@ -15,36 +15,33 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  // add badges placeholders
+  // add badges placeholders, badge for license chosen
 
-  // add table of contents (optional)
-  // ## ${}
+  // add table of contents with linked sections
+  ## Table of Contents
 
-  // add repository title then repo description
-  // ### ${}
-
-  // add features (format as bulleted list)
-  ### Features
-  // ${}
-
-  // add program title and screenshot
-    // add program description
-  ### ${data.title}
+  // add description 
+  ## Description
 
   // add installation instructions
   ### Installation
 
-  // add license
-  ### License 
+  // add usage instructions
+  ## Usage
 
-  // add contributing
+  // add contributing how to contribute
   ### Contributing
     // add specifics and link to contributor covenant
     This Code of Conduct is adapted from the Contributer Convenant, version , available at [Contributer Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
+  // add license
+  ### License 
+
   // add tests
   ### Tests
 
+  // add questions
+  ### Questions?
 `;
 }
 
