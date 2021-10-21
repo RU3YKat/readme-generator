@@ -12,27 +12,52 @@ const questions = [
     {
         type: 'input',
         name: 'username',
-        message: 'What is the GitHub username associated with this project?',
+        message: 'What is the GitHub username associated with this project? (Required)',
         // add validation for username input
-        // validate: ''
+        validate: usernameInput => {
+            if (usernameInput) {
+                return true;
+            }
+            console.log('Please enter your GitHub username!');
+            return false;
+        }
     },
     // ask name of github repo
     {
         type: 'input',
         name: 'github',
-        message: 'Enter the GitHub repository name for the project:'
+        message: 'Enter the GitHub repository name for the project: (Required)',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            }
+            console.log('Please enter the name of the project GitHub repository!');
+            return false;
+        }
     },
     // request developer's email
     {
         type: 'input',
         name: 'email',
-        message: 'Enter the contact email for the project: (Required)'
+        message: 'Enter the contact email for the project: (Required)',
+        validate: emailInput => {
+            if (emailInput) {
+                return true;
+            }
+            console.log('Please enter contact email!');
+            return false;
+        }
     },
     // ask title of project
     {
         type: 'input',
         name: 'title',
-        message: 'Enter the title of your project: (Required)'
+        message: 'Enter the title of your project: (Required)',
+        validate: titleInput => {
+            if (titleInput) {
+                return true
+            }
+        }
     },
     // ask project description
     {

@@ -11,7 +11,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
   # ${data.title}
 
@@ -20,27 +20,22 @@ function generateMarkdown(data) {
   // add table of contents with linked sections
   ## Table of Contents
 
-  // add description 
   ## Description
+  ${data.description}
 
-  // add installation instructions
   ### Installation
+  ${data.installation}
 
-  // add usage instructions
   ## Usage
+  ${data.usage}
 
-  // add contributing how to contribute
   ### Contributing
-    // add specifics and link to contributor covenant
     This Code of Conduct is adapted from the Contributer Convenant, version , available at [Contributer Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
-  // add license
   ### License 
 
-  // add tests
   ### Tests
 
-  // add questions
   ### Questions?
 `;
 }
