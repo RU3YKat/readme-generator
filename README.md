@@ -32,7 +32,8 @@ Find your custom README in the /dist folder. It will contain badges courtesy of 
 
 [](https://img.shields.io/badge/License-ISC-violet.svg)
 
-![walkthrough](./quickdemo.gif)  
+![walkthrough](./quickdemo.gif)
+
 As shown in the above gif, users are prompted to answer a series of questions. These responses will be applied to the final, custom README.md.
 
 ## License
@@ -49,6 +50,6 @@ To test the program, please follow above Installation guide.
 
 ## Questions?
 
-If you have questions, please feel free to contact me at:
-[ru3ykat on GitHub](https://github.com/RU3YKat)  
-[ru3ykat's email](ru3ykat@gmail.com)
+This program was created by [ru3ykat on GitHub](https://github.com/RU3YKat).
+
+Contact me at [ru3ykat on Gmail](ru3ykat@gmail.com).

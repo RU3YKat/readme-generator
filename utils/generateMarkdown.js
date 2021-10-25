@@ -90,7 +90,6 @@ function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
   return `
-
   # ${data.title}  
   ## ${data.github}  
 
@@ -102,7 +101,7 @@ function generateMarkdown(data) {
 - [Usage Information](#usage)  
 - [License](#license)  
 - [Contribution Guidelines](#contributing)  
-- [Test Instructions](#tests)  
+- [Test Instructions](#testing)  
 - [Questions](#questions?)  
 
   ## Installation  
@@ -121,7 +120,7 @@ function generateMarkdown(data) {
 
   ${licenseSection}
 
-  ## Tests  
+  ## Testing  
   ${data.test}
 
   ## Questions?
