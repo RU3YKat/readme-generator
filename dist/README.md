@@ -1,34 +1,40 @@
 
 
-  # Died Trying  
-  # died trying  
-  
-  
+  # Test Portfolio  
+  ## test-portfolio  
 
   ## Description  
-  I died trying.  
+  An easy way to trial a new portfolio.  
+
+  ## Table of Contents  
+- [Installation Instructions](#installation)  
+- [Usage Information](#usage)  
+- [License](#license)  
+- [Contribution Guidelines](#contributing)  
+- [Test Instructions](#tests)  
+- [Questions](#questions?)  
 
   ## Installation  
-  by sleeping  
+  Install by downloading the trial test.  
 
   ## Usage  
-  instructions  
+  Please review instructions.  
 
   ## Contributing    
-  by not dying.
+  Please check the license.
 
   This program follows the Code of Conduct from the Contributer Convenant, version 2.1, available at [Contributer Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)  
 
   ## License  
-  [![BSD-3-Clause](https://img.shields.io/badge/License-BSD%203%20Clause-violet.svg)](https://opensource.org/licenses/BSD-3-Clause)
+  [![GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-violet.svg)](https://opensource.org/licenses/GPL-3.0)
 
-  This program is using BSD-3-Clause license. Please refer to the LICENSE file for more information.
+  This program is using GPL-3.0 license. Please refer to the LICENSE file for more information.
 
   ## Tests  
-  test
+  Please input your tests.
 
   ## Questions?
-  This program was created by [@died trying](github.com/ru3ykat/died-trying).  
+  This program was created by [@test-portfolio](github.com/ru3ykat/test-portfolio).  
   Contact me at ru3ykat@gmail.com.  
 
 
