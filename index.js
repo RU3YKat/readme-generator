@@ -55,15 +55,24 @@ const questions = [
         message: 'Enter the title of your project: (Required)',
         validate: titleInput => {
             if (titleInput) {
-                return true
+                return true;
             }
+            console.log('Please enter the title of the project!');
+            return false;
         }
     },
     // ask project description
     {
         type: 'input',
         name: 'description',
-        message: 'Please provide a description of the project: (Required)'
+        message: 'Please provide a description of the project: (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            }
+            console.log('Please enter a description of the project');
+            return false;
+        }
     },
     // ask installation instructions
     {
@@ -84,13 +93,13 @@ const questions = [
         message: 'Explain how project users can contribute: (Optional)'
     },
     // user makes selections with checkbox for license
-    {
-        type: 'checkbox',
-        name: 'license',
-        message: 'Please select a license for your project: (Required)',
-        // referenced [https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-trends-and-predictions/] 
+    // referenced [https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-trends-and-predictions/] 
         // for 2020s most popular open source licenses
-        choices: ['Apache 2.0', 'MIT', 'GPLv3', 'GPLv2', 'BSD 3', 'LGPLv2.1', 'BSD 2']
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please select a license for your project: (Optional)',
+        choices: ['Apache-2.0', 'MIT', 'GPL-3.0', 'GPL-2.0', 'BSD-3-Clause', 'LGPL-2.1', 'LGPL-3.0', 'BSD-2-Clause']  
     },
     // prompt for project run tests
     {
@@ -108,32 +117,34 @@ const questions = [
 
 // // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', data, err => {
+    fs.writeFile(fileName, data, err => {
         if (err){
-         return console.log(err);
+            return console.log(err);
         }
         console.log('README.md has been generated!')
-    })
+    });
 };
 
 // TODO: Create a function to initialize app
 // referenced [https://www.geeksforgeeks.org/node-js-util-promisify-method/]
 // referenced [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await]
+// referenced [https://www.npmjs.com/package/util.promisify]
 async function init() {
     try {
-        const answers = await inquirer.prompt(questions);
-        const markdown = generateMarkdown(answers);
+        // call inquirer to prompt questions
+        const data = await inquirer.prompt(questions);
+        
+        // pass inquirer user's answers to generateMarkdown
+        const markdown = generateMarkdown(data);
 
-        console.log(answers)
-
+        // write markdown to file
         await writeFileAsync('./dist/README.md', markdown);
         console.log('README success!');
 
-    } catch(err) {
+    } catch (err) {
         console.log(err);
     }
 };
-
 
 // Function call to initialize app
 init();
