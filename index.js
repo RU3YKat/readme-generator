@@ -35,6 +35,19 @@ const questions = [
             return false;
         }
     },
+    // request project's github url
+    {
+        type: 'input',
+        name: 'githubUrl',
+        message: 'Enter the URL of the program on GitHub: (Required)',
+        validate: githubUrlInput => {
+            if (githubUrlInput) {
+                return true;
+            }
+            console.log('Please enter the URL of the project on GitHub!');
+            return false;
+        }
+    },
     // request developer's email
     {
         type: 'input',

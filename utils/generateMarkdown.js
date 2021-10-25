@@ -92,12 +92,18 @@ function generateMarkdown(data) {
   return `
 
   # ${data.title}  
-  # ${data.github}  
-  
-  
+  ## ${data.github}  
 
   ## Description  
   ${data.description}  
+
+  ## Table of Contents  
+- [Installation Instructions](#installation)  
+- [Usage Information](#usage)  
+- [License](#license)  
+- [Contribution Guidelines](#contributing)  
+- [Test Instructions](#tests)  
+- [Questions](#questions?)  
 
   ## Installation  
   ${data.installation}  
@@ -106,8 +112,9 @@ function generateMarkdown(data) {
   ${data.usage}  
 
   ## Contributing    
+  ${data.contributing}
 
-  This Code of Conduct is adapted from the Contributer Convenant, version 2.1, available at [Contributer Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)  
+  This program follows the Code of Conduct from the Contributer Convenant, version 2.1, available at [Contributer Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)  
 
   ## License  
   [![${data.license}](${badge})](${licenseLink})
@@ -115,8 +122,11 @@ function generateMarkdown(data) {
   ${licenseSection}
 
   ## Tests  
+  ${data.test}
 
-  ## Questions?  
+  ## Questions?
+  This program was created by [@${data.github}](${data.githubUrl}).  
+  Contact me at ${data.email}.  
 
 
   `;
