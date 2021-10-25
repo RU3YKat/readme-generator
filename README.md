@@ -34,7 +34,13 @@ Find your custom README in the /dist folder. It will contain badges courtesy of 
 
 ![walkthrough](./quickdemo.gif)
 
-As shown in the above gif, users are prompted to answer a series of questions. These responses will be applied to the final, custom README.md.
+As shown in the above gif, users are prompted to answer a series of questions. These responses will be applied to the final, custom README.md. Please view the [complete Walkthrough Video](./walkthrough.mp4) here.
+
+![node.js CLI](./images/screenshot-node.png)
+Screenshot of user inputting data in CLI.
+
+![README product](./images/screenshot-READMEfinal.png)
+Screenshot of end product README.
 
 ## License
 
